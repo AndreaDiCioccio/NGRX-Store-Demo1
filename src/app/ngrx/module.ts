@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
-import * as fromUsers from './user.reducers'
+import * as fromUsers from './reducers'
 
 @NgModule({
   imports: [
