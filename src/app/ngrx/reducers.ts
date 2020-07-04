@@ -1,5 +1,5 @@
 import { Action, createReducer, on } from '@ngrx/store';
-import * as userAction from './user.actions'
+import * as actions from './user.actions'
 import { User } from '../interfaces';
 
 //auth state, not store state
@@ -13,7 +13,7 @@ const initialState: State = {
 
 const userReducer = createReducer(
     initialState,
-    on(userAction.updateUser, (state, {user}) => ({ user:user }))
+    on(actions.updateUser, (state, {user}) => ({ user:user }))
 );
   
 export function reducer(state: State | undefined, action: Action) {

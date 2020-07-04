@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store'
 import { User, StoreState } from './interfaces';
 import { Observable } from 'rxjs';
-import { updateUser } from './ngrx/user.actions';
+import { updateUser } from './ngrx/actions';
 import { FormGroup, FormControl } from '@angular/forms';
-import { selectUser } from './ngrx/user.selectors';
+import { selectUser } from './ngrx/selectors';
 
 
 @Component({
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit{
     }
 
     updateUser(){
-        let user = {
+        let user:User = {
             name:String(this.userForm.controls.name.value),
             surname:String(this.userForm.controls.surname.value),
             age:Number(this.userForm.controls.age.value)
