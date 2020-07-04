@@ -2,7 +2,7 @@ import { Action, createReducer, on } from '@ngrx/store';
 import * as userAction from './user.actions'
 import { User } from '../interfaces';
 
-//user state, not store state
+//auth state, not store state
 interface State {
     user:User
 }
