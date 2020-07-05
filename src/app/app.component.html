@@ -1,10 +1,12 @@
+<h1>ngrx/store demo1</h1>
+<h2>User:</h2>
 <div class="form" [formGroup]="userForm">
     <input type="text" class="text" formControlName="name" placeholder="name" required>
     <input type="text" class="text" formControlName="surname" placeholder="surname" required>
-    <input type="number" class="text" formControlName="age" required>
+    <input type="text" class="text" formControlName="age" placeholder="age" required>
     <button class="btn" (click)="updateUser()">Insert</button>
 </div>
-<h3>Selector:</h3>
+<h2>Selector:</h2>
 <pre>
     {{user$ | async | json}}
 </pre>
