@@ -1,15 +1,7 @@
 <div class="form" [formGroup]="userForm">
-    <div class="form-group">
-        <input type="text" class="text" formControlName="name" placeholder="name" required>
-    </div>
-
-    <div class="form-group">
-        <input type="text" class="text" formControlName="surname" placeholder="surname" required>
-    </div>
-
-    <div class="form-group">
-        <input type="number" class="text" formControlName="age" required>
-    </div>
+    <input type="text" class="text" formControlName="name" placeholder="name" required>
+    <input type="text" class="text" formControlName="surname" placeholder="surname" required>
+    <input type="number" class="text" formControlName="age" required>
     <button class="btn" (click)="updateUser()">Insert</button>
 </div>
 <h3>Selector:</h3>
