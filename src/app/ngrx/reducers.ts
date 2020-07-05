@@ -8,7 +8,7 @@ interface State {
 }
 
 const initialState: State = {
-    user: undefined
+    user: null
 }
 
 const userReducer = createReducer(
