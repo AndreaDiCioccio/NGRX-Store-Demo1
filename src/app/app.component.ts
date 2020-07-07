@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store'
-import { User, StoreState } from './interfaces';
+import { User, StoreState } from './ngrx/models';
 import { Observable } from 'rxjs';
 import { updateUser } from './ngrx/actions';
 import { FormGroup, FormControl } from '@angular/forms';

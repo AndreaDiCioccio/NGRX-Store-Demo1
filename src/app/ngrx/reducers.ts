@@ -1,6 +1,6 @@
 import { Action, createReducer, on } from '@ngrx/store';
 import * as actions from './actions'
-import { User } from '../interfaces';
+import { User } from './models';
 
 //auth state, not store state
 interface State {
