@@ -2,12 +2,11 @@ import { Action, createReducer, on } from '@ngrx/store';
 import * as actions from './actions'
 import { User } from './models';
 
-//auth state, not store state
-interface State {
+interface UserState {
     user:User
 }
 
-const initialState: State = {
+const initialState: UserState = {
     user: null
 }
 
@@ -16,6 +15,6 @@ const userReducer = createReducer(
     on(actions.updateUser, (state, {user}) => ({ user:user }))
 );
   
-export function reducer(state: State | undefined, action: Action) {
+export function reducer(state: UserState | undefined, action: Action) {
     return userReducer(state, action);
 }
