@@ -1,8 +1,4 @@
-export class User {
-    name:string
-    surname:string
-    age:number
-}
+import { User } from '../interfaces'
 
 export class AuthState{
     auth:User

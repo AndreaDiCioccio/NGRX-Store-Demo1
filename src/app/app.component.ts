@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store'
-import { User, StoreState } from './ngrx/models';
+import { StoreState } from './ngrx/models';
+import { User } from './interfaces'
 import { Observable } from 'rxjs';
 import { updateUser } from './ngrx/actions';
 import { FormGroup, FormControl } from '@angular/forms';
@@ -12,6 +13,7 @@ import { selectUser } from './ngrx/selectors';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit{
   
     user$:Observable<User>
