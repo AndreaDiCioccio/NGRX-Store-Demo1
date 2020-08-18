@@ -4,7 +4,7 @@ import { StoreState } from './ngrx/models';
 import { User } from './interfaces'
 import { Observable } from 'rxjs';
 import { updateUser } from './ngrx/actions';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { selectUser } from './ngrx/selectors';
 
 @Component({
@@ -18,8 +18,8 @@ export class AppComponent implements OnInit{
     user$:Observable<User>
 
     userForm = new FormGroup({
-        name: new FormControl(''),
-        surname: new FormControl(''),
+        name: new FormControl('', [Validators.required]),
+        surname: new FormControl('', [Validators.min(1)]),
         age: new FormControl('')
     });
 
