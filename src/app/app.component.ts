@@ -7,7 +7,6 @@ import { updateUser } from './ngrx/actions';
 import { FormGroup, FormControl } from '@angular/forms';
 import { selectUser } from './ngrx/selectors';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
