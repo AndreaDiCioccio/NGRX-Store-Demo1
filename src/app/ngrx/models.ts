@@ -1,6 +1,6 @@
 import { User } from '../interfaces'
 
-export class AuthState{
+export interface AuthState{
     auth:User
 }
 

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
-import * as fromUsers from './reducers'
+import * as reducers from './reducers'
 
 @NgModule({
   imports: [
-    StoreModule.forFeature('auth', fromUsers.reducer)
+    StoreModule.forFeature('auth', reducers.reducer)
   ],
 })
 

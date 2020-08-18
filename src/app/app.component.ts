@@ -8,9 +8,9 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { selectUser } from './ngrx/selectors';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 
 export class AppComponent implements OnInit{
