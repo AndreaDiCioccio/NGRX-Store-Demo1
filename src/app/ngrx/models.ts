@@ -5,5 +5,5 @@ export interface AuthState{
 }
 
 export interface StoreState {
-    auth: User
+    auth: AuthState
 }
