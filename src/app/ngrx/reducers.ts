@@ -1,12 +1,8 @@
 import { Action, createReducer, on } from '@ngrx/store';
 import * as actions from './actions'
-import { User } from '../interfaces';
+import { AuthState } from './models';
 
-interface UserState {
-    user:User
-}
-
-const initialState: UserState = {
+const initialState: AuthState = {
     user: null
 }
 
@@ -15,6 +11,6 @@ const userReducer = createReducer(
     on(actions.updateUser, (state, {user}) => ({ user:user }))
 );
   
-export function reducer(state: UserState | undefined, action: Action) {
+export function reducer(state: AuthState | undefined, action: Action) {
     return userReducer(state, action);
 }
